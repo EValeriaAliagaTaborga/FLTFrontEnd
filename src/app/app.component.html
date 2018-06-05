@@ -1,0 +1,47 @@
+<h1><font color="black">
+  {{title}}
+</font></h1>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<style>
+  .button {
+      background-color: #000000; /* Green */
+      border: none;
+      color: #999999;
+      padding: 8px 2px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 80px;
+  }
+</style>
+
+<a routerLink = "/get">
+  <button class="button">
+    Obtener
+  </button>
+</a>
+<a routerLink = "/add">
+  <button class="button">
+    Añadir
+  </button>
+</a>
+<a routerLink = "/update">
+  <button class="button">
+    Actualizar
+  </button>
+</a>
+<a routerLink = "/delete">
+  <button class="button">
+    Eliminar
+  </button>
+</a>
+
+<router-outlet></router-outlet>
+
+
+
